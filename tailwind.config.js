@@ -7,11 +7,12 @@ module.exports = {
     extend: {
       colors: {
         'custom-black': '#171717',
-        'custom-blue': '#FFBA08',
+
       },
     },
     fontFamily: {
       signature: ['Great Vibes'],
+      footer: ['Jura']
     }
   },
   plugins: [],
