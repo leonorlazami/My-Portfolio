@@ -21,7 +21,7 @@ const Projects = () => {
       source: todo,
       title: "To-do",
       description:
-        "A simple to-do list app for efficient task management with features like adding, completing, removing, and sorting tasks.",
+        "A simple to-do list app with features like adding, completing, removing, and sorting tasks.",
     },
     {
       id: 3,
