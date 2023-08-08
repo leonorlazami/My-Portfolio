@@ -65,7 +65,7 @@ const Projects = () => {
                 <img src={source} alt="" className="rounded-md duration-200" />
                 <div className="card__content">
                   <p className="card__title">{title}</p>
-                  <p className="card__description">{description}</p>
+                  <p className="card__description font-bold">{description}</p>
                 </div>
               </div>
 
