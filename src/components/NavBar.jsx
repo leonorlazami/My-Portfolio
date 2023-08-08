@@ -24,10 +24,10 @@ const NavBar = () => {
   ];
   return (
     <div
-      className="flex justify-center items-center 
-    w-full h-20 text-white fixed bg-custom-black px-4"
+      className="flex lg:justify-center md:justify-center items-center 
+    w-full h-20 text-white fixed bg-custom-black px-4 sm:justify-center z-10"
     >
-      <ul className="hidden md:flex z-10">
+      <ul className="hidden md:flex">
         {links.map(({ id, link }) => (
           <li
             key={id}
@@ -44,7 +44,7 @@ const NavBar = () => {
 
       <div
         onClick={() => setNav(!nav)}
-        className="cursor-pointer pr-1 z-10 text-white md:hidden"
+        className="cursor-pointer pr-1 text-white md:hidden"
       >
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
@@ -52,7 +52,7 @@ const NavBar = () => {
         <ul
           className="flex flex-col justify-center items-center absolute 
          top-0 left-0 w-full h-screen bg-gradient-to-b from-black
-          to-gray-800 text-white"
+          to-gray-800 text-white z-10"
         >
           {links.map(({ id, link }) => (
             <li

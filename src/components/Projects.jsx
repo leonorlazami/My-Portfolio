@@ -6,8 +6,6 @@ import eatnSplit from "../assets/portfolio/eatnSplit.png";
 import usePopcorn from "../assets/portfolio/usePopcorn.png";
 import magicNum from "../assets/portfolio/magic-num.png";
 
-import "../index.css";
-
 const Projects = () => {
   const projects = [
     {
