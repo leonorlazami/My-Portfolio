@@ -58,4 +58,7 @@
     color: #777;
     line-height: 1.4;
   }
+  .custom-rounded {
+    border-radius: 29% 71% 50% 50% / 86% 7% 93% 14%;
+  }
 }

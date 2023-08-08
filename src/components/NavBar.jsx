@@ -25,7 +25,7 @@ const NavBar = () => {
   return (
     <div
       className="flex lg:justify-center md:justify-center items-center 
-    w-full h-20 text-white fixed bg-custom-black px-4 sm:justify-center z-10"
+    w-full h-14 text-white fixed px-3 sm:justify-center z-10 bg-gray-900 shadow shadow-gray-800"
     >
       <ul className="hidden md:flex">
         {links.map(({ id, link }) => (
@@ -35,7 +35,6 @@ const NavBar = () => {
              text-white hover:scale-105 duration-200 hover:underline"
           >
             <Link to={link} smooth duration={500}>
-              {" "}
               {link}
             </Link>
           </li>
