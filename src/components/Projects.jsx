@@ -4,6 +4,7 @@ import todo from "../assets/portfolio/todolist.jpg";
 import farAway from "../assets/portfolio/farAway.png";
 import eatnSplit from "../assets/portfolio/eatnSplit.png";
 import usePopcorn from "../assets/portfolio/usePopcorn.png";
+import magicNum from "../assets/portfolio/magic-num.png";
 
 import "../index.css";
 
@@ -11,38 +12,56 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      source: pizzaReact,
-      title: "Fast-React-Pizza",
-      description:
-        "A simple and interactive app to order your favorite pizzas hassle-free.",
+      source: magicNum,
+      title: "Magic Number",
+      description: "An interesting game which guesses your number using magic.",
+      demo: "https://magic-num.vercel.app/",
+      code: "https://github.com/theLeoNoir/magic-num",
     },
+
     {
       id: 2,
       source: todo,
       title: "To-do",
-      description:
-        "A simple to-do list app with features like adding, completing, removing, and sorting tasks.",
+      description: "A simple to-do list app.",
+      demo: "https://todo-list-one-amber.vercel.app/",
+      code: "https://github.com/theLeoNoir/todo-list",
     },
     {
       id: 3,
-      source: farAway,
-      title: "Far Away",
+      source: pizzaReact,
+      title: "Fast-React-Pizza",
       description:
-        "An app to plan your vacation with a focus on packing essentials, making travel stress-free.",
+        "A simple and interactive app to order your favorite pizzas hassle-free.",
+      demo: "https://pizza-menu-7tlh47339-theleonoir.vercel.app/",
+      code: "https://github.com/theLeoNoir/pizza-menu",
     },
     {
       id: 4,
+      source: farAway,
+      title: "Far Away",
+      description:
+        "An app to plan your vacation with with features like adding, completing, removing, and sorting items.",
+      demo: "https://far-away-9lc7w7rlw-theleonoir.vercel.app/",
+      code: "https://github.com/theLeoNoir/far-away",
+    },
+    {
+      id: 5,
       source: eatnSplit,
       title: "Eat'n'Split",
       description:
         "Conveniently split expenses with friends and track payments effortlessly.",
+      demo: "https://eat-n-split-sigma.vercel.app/",
+      code: "https://github.com/theLeoNoir/eat-n-split",
     },
     {
-      id: 5,
+      id: 6,
       source: usePopcorn,
       title: "usePopcorn",
       description:
         "Explore movies, create your watchlist, and rate films for a personalized movie experience.",
+      demo: "https://use-popcorn-sigma.vercel.app/",
+      code: "https://github.com/theLeoNoir/usePopcorn",
     },
   ];
 
@@ -59,7 +78,7 @@ const Projects = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {projects.map(({ id, source, title, description }) => (
+          {projects.map(({ id, source, title, description, demo, code }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <div className="card">
                 <img src={source} alt="" className="rounded-md duration-200" />
@@ -70,12 +89,22 @@ const Projects = () => {
               </div>
 
               <div className="flex items-center justify-center h-12 ">
-                <button className="w-1/2 px-6 py-3 m-4 duration-150 hover:scale-110 ">
+                <a
+                  href={demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-1/2 px-6 py-3 m-4 duration-150 hover:scale-110"
+                >
                   Demo
-                </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-150 hover:scale-110">
+                </a>
+                <a
+                  href={code}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-1/2 px-6 py-3 m-4 duration-150 hover:scale-110"
+                >
                   Code
-                </button>
+                </a>
               </div>
             </div>
           ))}
