@@ -12,7 +12,7 @@ const Home = () => {
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full mr-5">
-          <h2 className="text-3xl sm:text-5xl font-bold text-white mt-10">
+          <h2 className="text-3xl sm:text-5xl font-bold text-white pt-20">
             Hi, I'm Leonor
           </h2>
           <h3 className="text-white">Front-end Developer</h3>
@@ -43,7 +43,7 @@ const Home = () => {
           <img
             src={HeroImage}
             alt="my profile"
-            className="rounded-2xl mx-auto w-2/3 md:w-full mb-40"
+            className="rounded-2xl mx-auto w-2/3 md:w-full pb-10"
           />
         </div>
       </div>

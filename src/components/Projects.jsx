@@ -66,7 +66,7 @@ const Projects = () => {
   return (
     <div
       name="projects"
-      className="bg-[#0a0908] w-full text-white md:h-screen pb-40"
+      className="bg-[#0a0908] w-full text-white md:h-screen pb-20"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-9 mb-5">
