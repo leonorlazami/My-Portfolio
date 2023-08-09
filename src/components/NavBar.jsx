@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
+import { IoClose } from "react-icons/io5";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -20,6 +21,10 @@ const NavBar = () => {
     {
       id: 4,
       link: "contact",
+    },
+    {
+      id: 5,
+      link: <IoClose size={60} className={nav ? "" : "hidden"} />,
     },
   ];
   return (

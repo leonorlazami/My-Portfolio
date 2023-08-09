@@ -64,7 +64,10 @@ const Projects = () => {
   ];
 
   return (
-    <div name="projects" className="bg-[#0a0908] w-full text-white md:h-screen">
+    <div
+      name="projects"
+      className="bg-[#0a0908] w-full text-white md:h-screen pb-40"
+    >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-9 mb-5">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
