@@ -1,10 +1,10 @@
 import React from "react";
 import pizzaReact from "../assets/portfolio/pizzaReact.jpg";
-import todo from "../assets/portfolio/todolist.jpg";
+import todo from "../assets/portfolio/2.png";
 import farAway from "../assets/portfolio/farAway.png";
 import eatnSplit from "../assets/portfolio/eatnSplit.png";
-import usePopcorn from "../assets/portfolio/usePopcorn.png";
-import magicNum from "../assets/portfolio/magic-num.png";
+import usePopcorn from "../assets/portfolio/3.png";
+import magicNum from "../assets/portfolio/1.png";
 
 const Projects = () => {
   const projects = [
