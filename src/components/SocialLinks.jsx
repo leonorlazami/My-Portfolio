@@ -1,6 +1,5 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const SocialLinks = () => {
@@ -32,7 +31,7 @@ const SocialLinks = () => {
           Resume <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: "https://linkedin.com",
+      href: "/resume.pdf",
       style: "rounded-br-md",
       download: true,
     },
