@@ -1,9 +1,9 @@
 import React from "react";
-import pizzaReact from "../assets/portfolio/pizzaReact.jpg";
-import todo from "../assets/portfolio/2.png";
-import farAway from "../assets/portfolio/farAway.png";
-import eatnSplit from "../assets/portfolio/eatnSplit.png";
-import usePopcorn from "../assets/portfolio/3.png";
+import pizzaReact from "../assets/portfolio/react-pizza.png";
+import todo from "../assets/portfolio/todo.png";
+import farAway from "../assets/portfolio/far-away.png";
+import eatnSplit from "../assets/portfolio/eat-split.png";
+import usePopcorn from "../assets/portfolio/usePopcorn .png";
 import magicNum from "../assets/portfolio/magic-num.png";
 
 const Projects = () => {
@@ -77,9 +77,16 @@ const Projects = () => {
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
           {projects.map(({ id, source, title, description, demo, code }) => (
-            <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
+            <div
+              key={id}
+              className="shadow-md shadow-gray-600 rounded-lg max-h-[20rem]"
+            >
               <div className="card">
-                <img src={source} alt="" className="rounded-md duration-200" />
+                <img
+                  src={source}
+                  alt=""
+                  className="rounded-md duration-200 object-scale-down h-auto w-auto"
+                />
                 <div className="card__content">
                   <p className="card__title">{title}</p>
                   <p className="card__description font-bold">{description}</p>
