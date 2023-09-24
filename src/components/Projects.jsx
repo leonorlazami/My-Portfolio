@@ -4,7 +4,7 @@ import todo from "../assets/portfolio/2.png";
 import farAway from "../assets/portfolio/farAway.png";
 import eatnSplit from "../assets/portfolio/eatnSplit.png";
 import usePopcorn from "../assets/portfolio/3.png";
-import magicNum from "../assets/portfolio/1.png";
+import magicNum from "../assets/portfolio/magic-num.png";
 
 const Projects = () => {
   const projects = [
@@ -13,8 +13,8 @@ const Projects = () => {
       source: magicNum,
       title: "Magic Number",
       description: "An interesting game which guesses your number using magic.",
-      demo: "https://magic-num.vercel.app/",
-      code: "https://github.com/theLeoNoir/magic-num",
+      demo: "https://the-magic-num.vercel.app/",
+      code: "https://github.com/leonorlazami/theMagicNum",
     },
 
     {
