@@ -2,7 +2,7 @@ import React from "react";
 import pizzaReact from "../assets/portfolio/react-pizza.png";
 import todo from "../assets/portfolio/todo.png";
 import farAway from "../assets/portfolio/far-away.png";
-import eatnSplit from "../assets/portfolio/eat-split.png";
+import fiftyFifty from "../assets/portfolio/fifty-fifty.png";
 import usePopcorn from "../assets/portfolio/usePopcorn .png";
 import magicNum from "../assets/portfolio/magic-num.png";
 
@@ -45,12 +45,12 @@ const Projects = () => {
     },
     {
       id: 5,
-      source: eatnSplit,
-      title: "Eat'n'Split",
+      source: fiftyFifty,
+      title: "Fifty/Fifty",
       description:
         "Conveniently split expenses with friends and track payments effortlessly.",
-      demo: "https://eat-n-split-sigma.vercel.app/",
-      code: "https://github.com/theLeoNoir/eat-n-split",
+      demo: "https://fifty-fifty.vercel.app/",
+      code: "https://github.com/leonorlazami/fifty-fifty",
     },
     {
       id: 6,
@@ -81,11 +81,11 @@ const Projects = () => {
               key={id}
               className="shadow-md shadow-gray-600 rounded-lg max-h-[20rem]"
             >
-              <div className="card">
+              <div className="card h-64">
                 <img
                   src={source}
                   alt=""
-                  className="rounded-md duration-200 object-scale-down h-auto w-auto"
+                  className="rounded-md duration-200 object-scale-down h-full w-full"
                 />
                 <div className="card__content">
                   <p className="card__title">{title}</p>
