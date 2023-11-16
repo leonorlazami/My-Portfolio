@@ -1,5 +1,5 @@
 import React from "react";
-import pizzaReact from "../assets/portfolio/react-pizza.png";
+import quizzler from "../assets/portfolio/quizzler.png";
 import todo from "../assets/portfolio/todo.png";
 import farAway from "../assets/portfolio/far-away.png";
 import fiftyFifty from "../assets/portfolio/fifty-fifty.png";
@@ -27,12 +27,12 @@ const Projects = () => {
     },
     {
       id: 3,
-      source: pizzaReact,
-      title: "Fast-React-Pizza",
+      source: quizzler,
+      title: "Quizzler",
       description:
-        "A simple and interactive app to order your favorite pizzas hassle-free.",
-      demo: "https://pizza-menu-7tlh47339-theleonoir.vercel.app/",
-      code: "https://github.com/theLeoNoir/pizza-menu",
+        "Quizzler is a web application designed for interactive quizzes. Users can select the difficulty level and category of questions, providing an engaging quiz experience.",
+      demo: " https://quizzler-henna.vercel.app/",
+      code: "https://github.com/leonorlazami/quizzler",
     },
     {
       id: 4,
@@ -85,7 +85,7 @@ const Projects = () => {
                 <img
                   src={source}
                   alt=""
-                  className="rounded-md duration-200 object-scale-down h-full w-full"
+                  className="rounded-md duration-200 object-scale-down h-full w-full bg-center"
                 />
                 <div className="card__content">
                   <p className="card__title">{title}</p>
