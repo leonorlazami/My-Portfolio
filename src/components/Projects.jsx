@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import quizzler from "../assets/portfolio/quizzler.png";
-import taskinator from "../assets/portfolio/taskinator.png";
-import farAway from "../assets/portfolio/far-away.png";
-import fiftyFifty from "../assets/portfolio/fifty-fifty.png";
-import usePopcorn from "../assets/portfolio/usePopcorn .png";
-import magicNum from "../assets/portfolio/magic-num.png";
+import quizzler from "../assets/portfolio/quizzler-1.png";
+import taskinator from "../assets/portfolio/taskinator-1.png";
+import farAway from "../assets/portfolio/far-away-1.png";
+import fiftyFifty from "../assets/portfolio/fifty-fifty-1.png";
+import usePopcorn from "../assets/portfolio/usepopcorn-1.png";
+import magicNum from "../assets/portfolio/magic-num-1.png";
 
 const Projects = () => {
   const [isHoverImg, setIsHoverImg] = useState(false);
@@ -89,11 +89,11 @@ const Projects = () => {
                 key={id}
                 className={`   rounded-2xl  hover:scale-105 duration-500  p-2 bg-gray-800`}
               >
-                <div className="h-64 py-1 relative ">
+                <div className="h-52 py-1 relative ">
                   <img
                     src={source}
                     alt=""
-                    className="p-2 duration-200 h-full w-full object-scale-down hover:blur hover:opacity-30 ease-in  "
+                    className="p-2 duration-200 h-full w-full  hover:blur hover:opacity-30 ease-in object-cover md:ob "
                     onMouseEnter={() => handleHover(id)}
                     onMouseLeave={handleLeave}
                   />
