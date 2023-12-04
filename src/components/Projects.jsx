@@ -64,7 +64,8 @@ const Projects = () => {
       source: quizzler,
       title: "Quizzler",
       description:
-        "Quizzler is a fun quiz app that lets users pick the quiz difficulty and category for a personalized and enjoyable experience.",
+        "Craft your quiz experience! Choose difficulty and category for personalized fun.",
+
       demo: " https://quizzler-henna.vercel.app/",
       code: "https://github.com/leonorlazami/quizzler",
     },
