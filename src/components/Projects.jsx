@@ -1,12 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import quizzler from "../assets/portfolio/quizzler.png";
-import todo from "../assets/portfolio/todo.png";
+import taskinator from "../assets/portfolio/taskinator.png";
 import farAway from "../assets/portfolio/far-away.png";
 import fiftyFifty from "../assets/portfolio/fifty-fifty.png";
 import usePopcorn from "../assets/portfolio/usePopcorn .png";
 import magicNum from "../assets/portfolio/magic-num.png";
 
 const Projects = () => {
+  const [isHoverImg, setIsHoverImg] = useState(false);
+  function handleHover(id) {
+    setIsHoverImg(id);
+  }
+  function handleLeave() {
+    setIsHoverImg(null);
+  }
   const projects = [
     {
       id: 1,
@@ -19,23 +26,14 @@ const Projects = () => {
 
     {
       id: 2,
-      source: todo,
+      source: taskinator,
       title: "To-do",
       description: "A simple to-do list app.",
-      demo: "https://todo-list-one-amber.vercel.app/",
-      code: "https://github.com/theLeoNoir/todo-list",
+      demo: "https://taskinator.vercel.app/",
+      code: "https://github.com/leonorlazami/taskinator",
     },
     {
       id: 3,
-      source: quizzler,
-      title: "Quizzler",
-      description:
-        "Quizzler is a web application designed for interactive quizzes. Users can select the difficulty level and category of questions, providing an engaging quiz experience.",
-      demo: " https://quizzler-henna.vercel.app/",
-      code: "https://github.com/leonorlazami/quizzler",
-    },
-    {
-      id: 4,
       source: farAway,
       title: "Far Away",
       description:
@@ -44,7 +42,7 @@ const Projects = () => {
       code: "https://github.com/theLeoNoir/far-away",
     },
     {
-      id: 5,
+      id: 4,
       source: fiftyFifty,
       title: "Fifty/Fifty",
       description:
@@ -53,7 +51,7 @@ const Projects = () => {
       code: "https://github.com/leonorlazami/fifty-fifty",
     },
     {
-      id: 6,
+      id: 5,
       source: usePopcorn,
       title: "usePopcorn",
       description:
@@ -61,58 +59,73 @@ const Projects = () => {
       demo: "https://use-popcorn-sigma.vercel.app/",
       code: "https://github.com/theLeoNoir/usePopcorn",
     },
+    {
+      id: 6,
+      source: quizzler,
+      title: "Quizzler",
+      description:
+        "Quizzler is a fun quiz app that lets users pick the quiz difficulty and category for a personalized and enjoyable experience.",
+      demo: " https://quizzler-henna.vercel.app/",
+      code: "https://github.com/leonorlazami/quizzler",
+    },
   ];
 
   return (
     <div
       name="projects"
-      className="bg-[#0a0908] w-full text-white md:h-screen pb-20"
+      className="bg-[#0a0908] w-auto text-white md:h-auto pb-20"
     >
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-        <div className="pb-9 mb-5">
+      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full ">
+        <div className="px-2 py-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Projects
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {projects.map(({ id, source, title, description, demo, code }) => (
-            <div
-              key={id}
-              className="shadow-md shadow-gray-600 rounded-lg max-h-[20rem]"
-            >
-              <div className="card h-64">
-                <img
-                  src={source}
-                  alt=""
-                  className="rounded-md duration-200 object-scale-down h-full w-full bg-center"
-                />
-                <div className="card__content">
-                  <p className="card__title">{title}</p>
-                  <p className="card__description font-bold">{description}</p>
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8  sm:px-0">
+          {projects.map(
+            ({ id, source, title, description, demo, code, style }) => (
+              <div
+                key={id}
+                className={`   rounded-2xl  hover:scale-105 duration-500  p-2 bg-gray-800`}
+              >
+                <div className="h-64 py-1 relative ">
+                  <img
+                    src={source}
+                    alt=""
+                    className="p-2 duration-200 h-full w-full object-scale-down hover:blur hover:opacity-30 ease-in  "
+                    onMouseEnter={() => handleHover(id)}
+                    onMouseLeave={handleLeave}
+                  />
+                  {isHoverImg === id && (
+                    <div className="absolute top-6 p-6 flex flex-col gap-4 pointer-events-none">
+                      <h2 className="font-bold text-2xl">{title}</h2>
+                      <p className="text-md">{description}</p>
+                    </div>
+                  )}
+                </div>
+
+                <div className="flex items-center h-4 p-5">
+                  <a
+                    href={demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-1/2 px-4 py-3 m-4 duration-150 hover:scale-110 font-bold "
+                  >
+                    Demo
+                  </a>
+                  <a
+                    href={code}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-1/2 px-4 py-3 m-4 duration-150 hover:scale-110 font-bold "
+                  >
+                    Code
+                  </a>
                 </div>
               </div>
-
-              <div className="flex items-center justify-center h-12 ">
-                <a
-                  href={demo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-1/2 px-6 py-3 m-4 duration-150 hover:scale-110"
-                >
-                  Demo
-                </a>
-                <a
-                  href={code}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-1/2 px-6 py-3 m-4 duration-150 hover:scale-110"
-                >
-                  Code
-                </a>
-              </div>
-            </div>
-          ))}
+            )
+          )}
         </div>
       </div>
     </div>

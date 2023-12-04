@@ -17,11 +17,12 @@ const Home = () => {
           </h2>
           <h3 className="text-white">Front-end Developer</h3>
           <p className="text-gray-400 py-4 max-w-md">
-            I'm passionate about creating visually appealing and user-friendly
-            digital experiences. My journey in web development began with a
-            strong interest in IT and a desire to bring my ideas to life on the
-            web. Through projects that blend creativity and functionality, I've
-            honed my skills in HTML, CSS, and JavaScript, with a focus on React.
+            Passionate about crafting visually appealing and user-friendly
+            digital experiences, my journey into web development started with a
+            keen interest in IT. Driven by the desire to bring my ideas to life
+            on the web, I've honed my skills in HTML, CSS, and JavaScript, with
+            a particular focus on React through projects that seamlessly blend
+            creativity and functionality.
           </p>
           <div>
             <Link
