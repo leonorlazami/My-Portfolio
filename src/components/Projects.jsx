@@ -38,7 +38,7 @@ const Projects = () => {
       title: "Far Away",
       description:
         "An app to plan your vacation with with features like adding, completing, removing, and sorting items.",
-      demo: "https://far-away-9lc7w7rlw-theleonoir.vercel.app/",
+      demo: "https://far-away-psi.vercel.app/git ",
       code: "https://github.com/theLeoNoir/far-away",
     },
     {
@@ -90,7 +90,7 @@ const Projects = () => {
                 key={id}
                 className={`   rounded-2xl  hover:scale-105 duration-500  p-2 bg-gray-800`}
               >
-                <div className="h-52 py-1 relative ">
+                <div className="h-52 w-auto py-1 relative ">
                   <img
                     src={source}
                     alt=""
