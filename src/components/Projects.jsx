@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import quizzler from "../assets/portfolio/quizzler-1.png";
 import taskinator from "../assets/portfolio/taskinator-1.png";
-import farAway from "../assets/portfolio/far-away-1.png";
+import farAway from "../assets/portfolio/roam-ready.png";
 import fiftyFifty from "../assets/portfolio/fifty-fifty-1.png";
 import flixpicks from "../assets/portfolio/flixpicks.png";
 import magicNum from "../assets/portfolio/magic-num-1.png";
@@ -35,11 +35,11 @@ const Projects = () => {
     {
       id: 3,
       source: farAway,
-      title: "Far Away",
+      title: "Roam Ready",
       description:
         "An app to plan your vacation with with features like adding, completing, removing, and sorting items.",
-      demo: "https://far-away-psi.vercel.app/git ",
-      code: "https://github.com/theLeoNoir/far-away",
+      demo: "https://roam-ready-psi.vercel.app/",
+      code: "https://github.com/leonorlazami/roam-ready",
     },
     {
       id: 4,
@@ -94,7 +94,7 @@ const Projects = () => {
                   <img
                     src={source}
                     alt=""
-                    className="p-2 duration-200 h-full w-full  hover:blur hover:opacity-30 ease-in object-fit md:ob "
+                    className="p-2 duration-200 h-full w-full  hover:blur hover:opacity-30 ease-in object-contain md:ob "
                     onMouseEnter={() => handleHover(id)}
                     onMouseLeave={handleLeave}
                   />
