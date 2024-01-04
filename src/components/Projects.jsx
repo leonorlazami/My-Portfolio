@@ -56,8 +56,8 @@ const Projects = () => {
       title: "FlixPicks",
       description:
         "Explore movies, create your watchlist, and rate films for a personalized movie experience.",
-      demo: "https://use-popcorn-sigma.vercel.app/",
-      code: "https://github.com/theLeoNoir/usePopcorn",
+      demo: "https://flix-picks-sigma.vercel.app/",
+      code: "https://github.com/leonorlazami/FlixPicks",
     },
     {
       id: 6,
